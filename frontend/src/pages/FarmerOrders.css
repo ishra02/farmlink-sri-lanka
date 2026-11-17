@@ -1,0 +1,198 @@
+.farmer-orders-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.farmer-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.farmer-order-card {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5eadf;
+  border-radius: 14px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.farmer-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.farmer-order-header h2 {
+  color: #245c35;
+  font-size: 23px;
+}
+
+.farmer-order-header span {
+  background: #e8f3e8;
+  color: #245c35;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.farmer-order-card > p {
+  color: #666;
+  margin: 10px 0;
+}
+
+.farmer-order-card > h3 {
+  color: #245c35;
+  margin: 25px 0 15px;
+}
+
+.farmer-order-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 16px;
+  margin-bottom: 12px;
+  background: #f6f9f3;
+  border: 1px solid #e5eadf;
+  border-radius: 10px;
+}
+
+.farmer-order-product strong {
+  color: #333;
+}
+
+.farmer-order-product p {
+  color: #777;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.farmer-order-total {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e5eadf;
+  text-align: right;
+  color: #245c35;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.farmer-orders-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 14px;
+}
+
+.farmer-orders-empty span {
+  font-size: 45px;
+}
+
+.farmer-orders-empty h2 {
+  color: #245c35;
+  margin: 15px 0;
+}
+
+.farmer-orders-empty p {
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .farmer-order-card {
+    padding: 18px;
+  }
+
+  .farmer-order-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .farmer-order-product {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .farmer-order-total {
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
+.farmer-order-status-control {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid #e5eadf;
+}
+
+.farmer-order-status-control label {
+  width: 100%;
+  color: #245c35;
+  font-weight: 600;
+}
+
+.farmer-order-status-control select {
+  min-width: 180px;
+  padding: 11px 14px;
+  border: 1px solid #cbd8c5;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+}
+
+.farmer-order-status-control select:focus {
+  border-color: #245c35;
+}
+
+.farmer-status-button {
+  padding: 11px 20px;
+  background: #245c35;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.farmer-status-button:hover {
+  background: #194527;
+}
+
+.farmer-status-button:disabled {
+  background: #9eae9f;
+  cursor: not-allowed;
+}
+
+.farmer-orders-message {
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #e8f3e8;
+  color: #245c35;
+}
+
+.farmer-orders-error {
+  margin-bottom: 18px;
+  color: #b42318;
+}
+
+@media (max-width: 600px) {
+  .farmer-order-status-control {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .farmer-order-status-control select,
+  .farmer-status-button {
+    width: 100%;
+  }
+}
