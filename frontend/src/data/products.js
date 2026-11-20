@@ -62,7 +62,7 @@ export const products = [
     price: 100,
     farmer: 'Chandima Silva',
     district: 'Kurunegala',
-    image: 'http://localhost:8080/images/sri-lankan-coconut.png',
+    image: 'https://farmlink-sri-lanka.onrender.com/images/sri-lankan-coconut.png',
   },
   {
     id: 7,

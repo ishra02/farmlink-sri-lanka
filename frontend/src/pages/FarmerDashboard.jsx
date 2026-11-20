@@ -19,8 +19,8 @@ function FarmerDashboard() {
         }
 
         const [productsResponse, ordersResponse] = await Promise.all([
-          fetch('http://localhost:8080/api/products'),
-          fetch('http://localhost:8080/api/orders/farmer-orders', {
+          fetch('https://farmlink-sri-lanka.onrender.com/api/products'),
+          fetch('https://farmlink-sri-lanka.onrender.com/api/orders/farmer-orders', {
             credentials: 'include'
           })
         ]);

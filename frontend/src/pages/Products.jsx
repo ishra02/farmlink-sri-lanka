@@ -20,7 +20,7 @@ function Products({ onAddToCart }) {
   useEffect(() => {
     let isMounted = true;
 
-    fetch('http://localhost:8080/api/products')
+    fetch('https://farmlink-sri-lanka.onrender.com/api/products')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to load products');

@@ -93,7 +93,7 @@ function AddProduct() {
         formData.append('file', selectedImage);
 
         const uploadResponse = await fetch(
-          'http://localhost:8080/api/images/upload',
+          'https://farmlink-sri-lanka.onrender.com/api/images/upload',
           {
             method: 'POST',
             credentials: 'include',
@@ -112,7 +112,7 @@ function AddProduct() {
       }
 
       const response = await fetch(
-        'http://localhost:8080/api/products',
+        'https://farmlink-sri-lanka.onrender.com/api/products',
         {
           method: 'POST',
           credentials: 'include',

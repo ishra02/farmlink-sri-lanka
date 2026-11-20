@@ -37,7 +37,7 @@ function Navbar({ cartCount = 0 }) {
 
   const handleLogout = async () => {
     try {
-      await fetch('http://localhost:8080/api/auth/logout', {
+      await fetch('https://farmlink-sri-lanka.onrender.com/api/auth/logout', {
         method: 'POST',
         credentials: 'include',
       });

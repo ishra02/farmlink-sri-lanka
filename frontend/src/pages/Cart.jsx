@@ -57,7 +57,7 @@ function Cart({ cart, onRemove, onUpdateQuantity, onOrderPlaced }) {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/api/orders', {
+      const response = await fetch('https://farmlink-sri-lanka.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -114,7 +114,7 @@ function Cart({ cart, onRemove, onUpdateQuantity, onOrderPlaced }) {
                   <img
                     src={
                       product.image?.startsWith('/uploads/')
-                        ? `http://localhost:8080${product.image}`
+                        ? `https://farmlink-sri-lanka.onrender.com${product.image}`
                         : product.image
                     }
                     alt={product.name}

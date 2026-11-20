@@ -17,7 +17,7 @@ function ProductCard({ product, onAddToCart }) {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/products/${product.id}`,
+        `https://farmlink-sri-lanka.onrender.com/api/products/${product.id}`,
         {
           method: 'DELETE',
           credentials: 'include'
@@ -50,7 +50,7 @@ function ProductCard({ product, onAddToCart }) {
         <img
           src={
             product.image?.startsWith('/uploads/')
-              ? `http://localhost:8080${product.image}`
+              ? `https://farmlink-sri-lanka.onrender.com${product.image}`
               : product.image
           }
           alt={product.name}

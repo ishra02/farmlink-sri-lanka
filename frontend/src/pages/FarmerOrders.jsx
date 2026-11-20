@@ -34,7 +34,7 @@ function FarmerOrders() {
   const fetchOrders = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8080/api/orders/farmer-orders',
+        'https://farmlink-sri-lanka.onrender.com/api/orders/farmer-orders',
         {
           method: 'GET',
           credentials: 'include'
@@ -77,7 +77,7 @@ function FarmerOrders() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/orders/${orderId}/status`,
+        `https://farmlink-sri-lanka.onrender.com/api/orders/${orderId}/status`,
         {
           method: 'PUT',
           credentials: 'include',

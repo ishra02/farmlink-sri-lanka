@@ -12,7 +12,7 @@ function MyOrders() {
     async function fetchOrders() {
       try {
         const response = await fetch(
-          'http://localhost:8080/api/orders/my-orders',
+          'https://farmlink-sri-lanka.onrender.com/api/orders/my-orders',
           {
             method: 'GET',
             credentials: 'include'

@@ -29,7 +29,7 @@ function Auth() {
 
     try {
       const response = await fetch(
-  `http://localhost:8080/api/auth/${isRegister ? 'register' : 'login'}`,
+  `https://farmlink-sri-lanka.onrender.com/api/auth/${isRegister ? 'register' : 'login'}`,
   {
     method: 'POST',
     credentials: 'include',

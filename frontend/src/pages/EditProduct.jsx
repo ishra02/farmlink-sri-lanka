@@ -21,7 +21,7 @@ function EditProduct() {
   const [saving, setSaving] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/products')
+    fetch('https://farmlink-sri-lanka.onrender.com/api/products')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to load products');
@@ -62,7 +62,7 @@ function EditProduct() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/products/${id}`,
+        `https://farmlink-sri-lanka.onrender.com/api/products/${id}`,
         {
           method: 'PUT',
           credentials: 'include',
